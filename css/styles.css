@@ -1,0 +1,16 @@
+#containter{
+width:600px;
+position:relative;
+margin:50px auto;
+}
+#switcher{
+border:1px solid #ccc;
+width:400px;
+position:relative;
+}
+span .footnote{
+font-style:italic;
+font-family:"times new roman", times, serif;
+display:block;
+margin:1px 0;
+}

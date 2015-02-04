@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Hello, JQuery</title>
+<link rel="stylesheet" href="css/styles.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$('document').ready(function() {
+//    alert("good");
+var p_width=$('.speech p').outerWidth();
+var switcher_w=$('#switcher').outerWidth();
+$('#switcher').animate({left:(p_width - switcher_w)/2}, 'slow');
+});
+</script>
+</head>
+<body>
+<div id="containter">
+<div id="diction">
+</div>
+</div>
+</body>
+</html>

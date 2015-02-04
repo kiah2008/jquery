@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Hello, JQuery</title>
+<link rel="stylesheet" href="css/styles.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$('document').ready(function() {
+//    alert("good");
+var p_width=$('.speech p').outerWidth();
+var switcher_w=$('#switcher').outerWidth();
+$('#switcher').animate({left:(p_width - switcher_w)/2}, 'slow');
+});
+</script>
+</head>
+<body>
+<div id="containter">
+    <div id="switcher">
+    <div class="label">Text Size</div>
+    <button class="selected" id="switcher-default">Default</button>
+    <button class="button" id="switcher-bigger">Bigger</button>
+    <button class="button" id="switcher-smaller">Smaller</button>
+    </div>
+    <div class="speech">
+    <p>Git<span class="footnote">是一个分布式的版本控制系统，</span>最初由Linus Torvalds编写，用作Linux内核代码的管理。在推出后，Git在其它项目中也取得了很大成功，尤其是在Ruby社区中。目前，包括Rubinius、Merb和Bitcoin在内的很多知名项目都使用了Git。Git同样可以被诸如Capistrano和Vlad the Deployer这样的部署工具所使用。
+    </p>
+    <p>　IT 之家讯 2 月 4 日消息，市场研究公司 Canalys 最新报告显示，去年第四季度三星不再是印度第一大智能手机厂商，本土厂商 Micromax 智能手机出货量更大。Micromax 第四季度智能手机销量占该季度印度智能手机总销量的 22%，三星该季度的销量则占 20%，位居第二。
+
+　　Micromax 第四季度在印度共卖出了 460 万部智能手机，三星该季度在印度卖出了 440 万部智能手机。这也是三星首次在印度输给了 Micromax。Canalys 表示，第四季度印度智能手机总销量为 2160 万，相较于去年第三季度，上涨了 90%。
+
+　　印度销售的智能手机大部分为廉价设备，近乎四分之一的售价不足 100 美元；售价 100 美元到 200 美元的设备占总销量的 41%。印度厂商 Karbonn 和 Lava 本季度销量分别为 200 万和 150 万，位居第三和第四。
+
+　　Micromax 近期在智能手机领域加强了努力，与 Cyanogen 签署独家协议，推出了 Yu Yureka 智能手机，该手机搭载 CyanogenMod，只通过亚马逊印度发售。
+
+　　三星之前也在印度推出首款 Tizen 手机 Z1，不过看上去市场反应平平。</p>
+    </div>
+    <a href="#">read more</a>
+</div>
+</body>
+</html>
